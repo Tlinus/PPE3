@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+.map{
+	width:1425px;
+	height:625px;
+	background:url('worldmapf.png') left top no-repeat;
+	position:relative;
+}
+.map .overlay{
+	width:1425px;
+	height:625px;
+	background:url('worldmapf.png') 1625px top no-repeat;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1;
+}
+.map img{
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+}
+.map .tooltip{
+	position:fixed;
+	border-radius:5px;
+	background:#282828;
+	color:white;
+	padding:0 10px;
+	display:inline-block;
+	top:0;
+	left:0;
+	z-index:3;
+	text-align:center;
+}

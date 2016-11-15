@@ -1,0 +1,54 @@
+<div id="popupAddDirectory" class="popup">
+    <div id="close" onclick="$('#blackScreen').hide();$('#popupAddDirectory').hide();">X Close</div>
+    <table>
+        <caption>Create directory</caption>
+        <tr>
+            <td>Directory name</td>
+            <td><input type="text" placeholder="Directory name" id="AddDirectoryName"/></td>
+        </tr>
+        <tr>
+            <td colspan="2"><input type="button" value="Create" OnClick="CreateDirectory()"/></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function CreateDirectory(){
+        var parent = $('.currentFile').attr('id');
+        var project = $('.interfaceButtons').attr('id');
+        var name = $('#AddDirectoryName').val();
+        var fileNames =$('.fileName');
+        var nameFound = "";
+        fileNames.each(function(index){
+            if(fileNames[index].innerHTML.toLowerCase()=== name.toLowerCase()){ 
+                nameFound=name;
+            }
+        });
+        if(nameFound===""){
+            if(name.match("^[a-zA-Z0-9_]*$")){
+                if(name.length>3){
+
+                    $.post(
+                        'PHPscripts/AJAX_createDirectory.php',
+                        {parent:parent,project:project,name:name},
+                        function(data){
+                            $('#blackScreen').hide();
+                            $('#popupAddDirectory').hide();
+                            $('.fileContent').html(data);
+                        });
+
+                }
+                else{
+                    alert('Name must be at least 3 character long');
+                }
+            }
+            else{
+                alert('Name contains illegal characters');
+            }
+        }
+        else{
+            alert('Directory "'+name+'"already exists.');
+        }
+        
+    }
+</script>

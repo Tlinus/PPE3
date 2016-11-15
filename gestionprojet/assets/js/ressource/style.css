@@ -1,0 +1,16 @@
+#users{
+    width: 5vw;
+}
+
+#users li{
+    cursor: pointer;
+    border-bottom: 1px solid grey; 
+}
+
+#users li:last-child{
+    border-bottom: none;
+}
+
+.Connected {
+    color: green;
+}

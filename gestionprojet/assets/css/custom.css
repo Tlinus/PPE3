@@ -1,0 +1,192 @@
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.icon-def {
+    font-size: 5rem;
+}
+
+.content-adjust {
+    margin: 5%;
+}
+
+.image-center {
+    margin: 0 auto;
+    margin-top: 5%;
+}
+
+.glyphicon-user {
+    font-size: 10rem;
+}
+
+.chat-bar-icon{
+    font-size: 6rem;
+}
+
+.badge-chat {
+    float: left;
+    margin-bottom: -25%;
+    background-color: orange;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.panel-default {
+    border-color: #4A90E2;
+}
+
+.chat-icon {
+    font-size: 2rem;
+}
+
+.panel-default>.panel-heading {
+    color: whitesmoke;
+    background-color: #4A90E2;
+    border-color: #4A90E2;
+}
+
+.float-right {
+    float: right;
+}
+
+.break {
+    clear: both;
+}
+
+.chat-text-right {
+    float: right;
+}
+
+.sent-message {
+    background-color: #5cb85c;
+    padding: 3%;
+    color: whitesmoke;
+}
+
+.received-message {
+    background-color: #4A90E2;
+    padding: 3%;
+    color: whitesmoke;
+}
+
+.new-message {
+    color: orange;
+}
+
+.login {
+    background-color: #4A90E2;
+    color: whitesmoke;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.line {
+    margin-top: 15%;
+    margin-bottom: 15%;
+    padding: 1%;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+#menu {
+    background-color: #4A90E2;
+    color: whitesmoke;
+    padding-top: 1%;
+}
+
+#menu a {
+    color: whitesmoke;
+}
+
+.project-link {
+
+}
+
+#logout:active {
+    color: whitesmoke;
+    background-color: #3073C1;
+    text-decoration: none;
+    padding: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 5%;
+}
+
+#logout:hover {
+    color: whitesmoke;
+    background-color: #3073C1;
+    text-decoration: none;
+    padding: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    border-radius: 5%;
+}
+
+#logout:focus {
+    outline: 0;
+    border: 0;
+}
+
+#avatar-icon:active {
+    color: whitesmoke;
+    background-color: transparent!important;
+    padding: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    border-radius: 0!important;
+}
+
+#avatar-icon:hover {
+    color: whitesmoke;
+    background-color: transparent!important;
+    padding: 0!important;
+    padding-right: 0!important;
+    padding-left: 0!important;
+    border-radius: 0!important;
+}
+
+#logout-icon {
+    font-size: 2rem;
+}
+
+#name {
+    margin-bottom: 5%;
+}
+
+#searchBar{
+    padding-bottom: 5%;
+}
+
+#miniTask {
+    padding: 5%
+}
+
+#tache  {
+    word-wrap: break-word;
+}
+
+#chat {
+    word-wrap:break-word;
+}
+
+#chat-bar {
+    border-left: 2px solid #4A90E2;
+    padding-top: 1%;
+}
+
+#chat-bar-icon {
+    font-size: 5rem;
+}
+
+
+

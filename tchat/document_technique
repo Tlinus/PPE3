@@ -1,0 +1,5 @@
+installation module:
+  node.js
+  express
+  socket.io
+  mysql

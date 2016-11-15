@@ -1,0 +1,32 @@
+<div id="popupDeleteSelection" class="popup">
+    <div id="close" onclick="closeDeleteSelection();">X Close</div>
+    <table>
+        <caption>Create directory</caption>
+        <tr>
+            <td><input type="button" value="Ok" onclick="deleteSelection();"/></td>
+            <td><input type="button" value="Cancel" onclick="closeDeleteSelection()"/></td>
+        </tr>
+    </table>
+</div>
+
+<script>
+    function closeDeleteSelection(){
+        $('#blackScreen').hide();
+        $('#popupDeleteSelection').hide();
+    }
+    function deleteSelection(){
+        var selected=$('.fileList li.selected');
+        var id = selected.attr('id');
+        var classes = selected.attr('class');
+        var type = classes.split(' ')[0];
+        var project = $('.interfaceButtons').attr('id');
+        $.post(
+            'PHPscripts/AJAX_deleteContent.php',
+            {id:id,type:type,project:project},
+            function(data){
+                closeDeleteSelection();
+                $('.fileContent').html(data);
+            }
+        );        
+    }
+</script>

@@ -1,0 +1,235 @@
+
+@font-face {
+   font-family: 'Gras';	
+   src: url('font/Heavitas.ttf') format('truetype');
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: georgia;
+	color: #01104B;
+}
+body{
+	background-color: #E8E8E8;
+}
+.floatRight{
+	float: right;
+	margin-right: 7.5px;
+}
+.clear{
+	clear: both;
+	float: none;
+}
+.Box{
+	border: 3px  outset #21306B;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	height: 100%;
+}
+.boutonValider{
+	background: #3498db;
+	background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+	background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+	background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+	background-image: -o-linear-gradient(top, #3498db, #2980b9);
+	background-image: linear-gradient(to bottom, #3498db, #2980b9);
+	-webkit-border-radius: 28;
+	-moz-border-radius: 28;
+	border-radius: 28px;
+	font-family: Georgia;
+	color: #ffffff;
+	padding: 5px 10px 5px 10px;
+	border: solid #1b4057 2.5px;
+	text-decoration: none;
+	margin: 5px;
+}
+.separateur{
+	border-top: 3px dashed #686E9D;
+	margin-top: 2.5vh;
+}
+.titre{
+	margin-top: 20px;
+	text-align: center;
+	font-size: 1.2em;
+	font-family:'gras';
+	text-decoration: none;
+	text-decoration: underline;
+
+}
+.conteneurBouton{ /* div conteneur des boutons valider clear both + height!!!*/
+	width: 100%;
+	height: 40px;
+}
+/* *********************** Color *********************** */
+/* *********************Header************************** */
+header img{
+	display: inline-block;
+	max-width: 75px;
+	max-height: 75px;
+	float: left;
+}
+header nav{
+	width: 90%;
+	display: inline-block;
+	vertical-align: top;
+	float: left;
+}
+header nav ul{
+	width: 100%;
+	vertical-align: top
+}
+header nav ul li{
+	display:inline-block;
+	list-style-type:none;
+	text-align:center;
+	width:24%;
+	line-height: 75px;
+	height: 75px;
+	font-family: 'gras';
+	color: #01104B;
+	text-shadow:-1px 3px 3px rgba(22,16,102,0.6);
+}
+header h1{
+	display: inline-block;
+	text-align: center;
+	width: 100%;
+	text-shadow:-1px 5px 3px rgba(22,16,102,0.6);
+	font-weight:normal;text-transform:uppercase;
+	color:#21306B;
+	letter-spacing:0pt;
+	word-spacing:2pt;
+	font-size:37px;
+	font-family:'gras';
+	line-height:1;
+}
+header{
+	float: none;
+	clear: left;
+	background-image: url("images/header.jpg");
+	background-size: 100% 100%;
+	height: 15vh;
+	min-height: 125px;
+}
+
+/************************Page creer un Projet *************************************/
+
+#creerProjet{
+	width:350px;
+	height: 500px;
+	margin: auto;
+	margin-top: 100px;
+	border: 3px  outset #21306B;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+}
+#creerProjet h3 {
+	margin-top: 25px;
+	text-align: center;
+
+}
+#creerProjet #ProjetTitre, #creerProjet #ProjetCDC{
+	margin-top: 50px;
+	text-align: center;
+}
+#creerProjet .boutonValider{
+	float: right;
+	margin-top: 75px;
+	margin-right: 140px;
+}
+
+#creerProjet p{
+	font-size: 1.2em;
+}
+
+/************************Page modifierUnProjet *************************************/
+
+#modifierUnProjet article{
+	width:30%;
+	min-height: 450px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 50px;
+}
+#modifierUnProjet #firstArticle{
+	margin-left: 5%;
+}
+#modifierUnProjet .Box{
+	border: 3px  outset #21306B;
+	border-radius: 10px;
+	background-color: #FFFFFF;
+	height: 100%;
+}
+#modifierUnProjet .tache, #modifierUnProjet .sous_tache{
+		border: 1px solid #21306B;
+		border-radius: 10px;
+		margin: 5px;
+}
+#modifierUnProjet .sous_tache{
+	margin-left: 50px;
+	border: 0.5px solid #21306B;
+}
+#modifierUnProjet .tache input, #modifierUnProjet .sous_tache input{
+	display: inline-block;
+	text-align: right;
+	margin-right: 10px;
+}
+#generalModifierProjet p{
+	margin-top: 2.5vh;
+	text-align: center;
+}
+.titre_sous_tache, .tache_titre{
+	display: inline-block;
+	padding-left: 5px;
+
+}
+.dead_line_sous_tache, .dead_line_tache{
+	display: inline-block;
+	float: right;
+	padding-right: 5px;
+
+}
+.commentaire_sous_tache, .commentaire_tache{
+	margin: 10px;
+}
+.ProjetSousTacheBoxCRUD, .sousTacheCRUD{
+	float: none;
+	clear: both;
+}
+#ProjetTacheBox .boutonValider{
+	float: right;
+
+	}	
+#generalModifierProjet .conteneurBouton{
+	display: inline-block;
+	text-align: center;
+}
+
+.utilisateur_du_projet_box img{
+	width: 25px;
+	height: 25px;
+}
+/*************************** page mesProjets ******************************/
+
+#toutProjets{
+	width: 40%;
+	margin-left: 5%;
+}
+#toutProjets .box{
+	padding: 10px;
+	margin: 10px;
+}
+#toutProjets .contenu{
+	margin: 5%;
+	width: 90%;
+	height: 100px;
+}
+#toutProjets .contenu .boutonValider{
+	display: inline-block;
+}
+
+/* ********************** page gererProjet **********************************/
+#gererProjet{
+
+}
+#gere

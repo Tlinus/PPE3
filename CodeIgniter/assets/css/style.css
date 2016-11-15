@@ -1,0 +1,21 @@
+#users{
+    width: 5vw;
+    float: right;
+    clear: right;
+    height: 100vh;
+}
+
+#users li{
+    cursor: pointer;
+    border-bottom: 1px solid grey;
+    list-style: none;
+    text-align: center;
+}
+
+#users li:last-child{
+    border-bottom: none;
+}
+
+.Connected {
+    color: green;
+}
